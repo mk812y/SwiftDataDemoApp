@@ -15,8 +15,8 @@ class Student {
     var lastName: String
     var school: School
     
-    init(id: UUID, firstName: String, lastName: String, school: School) {
-        self.id = id
+    init(firstName: String, lastName: String, school: School) {
+        self.id = UUID()
         self.firstName = firstName
         self.lastName = lastName
         self.school = school
@@ -29,8 +29,8 @@ class School {
     var schoolName: String
     var courseName: String
     
-    init(id: UUID, schoolName: String, courseName: String) {
-        self.id = id
+    init(schoolName: String, courseName: String) {
+        self.id = UUID()
         self.schoolName = schoolName
         self.courseName = courseName
     }

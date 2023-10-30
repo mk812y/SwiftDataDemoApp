@@ -3,7 +3,7 @@
 //  SwiftDataDemoApp
 //
 //  Created by Михаил Куприянов on 30.10.23..
-//
+///https://medium.com/@aryanrunthala.92/swiftdata-c273f100c397
 
 import SwiftUI
 import SwiftData
@@ -26,7 +26,9 @@ struct SwiftDataDemoAppApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                StudentListView()
+            }
         }
         .modelContainer(sharedModelContainer)
     }
